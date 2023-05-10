@@ -1,11 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 // import Chart from './Components/Chart/Chart';
-import Chart3 from "./Components/Chart/Chart3";
+// import Chart3 from "./Components/Chart/Chart3";
 // import Chart from './Components/d3/Chart';
-import Chart4 from "./Components/D3Example/App";
-import Chart from './Components/D3Example1/Chart';
-import { CreatePlot } from "./Components/Zoom/Line";
+// import Chart4 from "./Components/D3Example/App";
+// import Chart from './Components/D3Example1/Chart';
+// import { CreatePlot } from "./Components/Zoom/Line";
+import Zoom from './Components/ZoomDate/Zoom';
 
 function App() {
   // let data =  [
@@ -22,14 +23,16 @@ function App() {
   //   { name: '2004', value: 60 },
   //   { name: '2005', value: 80 },
   // ];
-  return (
-    <div className="App">
-     {/* <Chart4 data={ data } /> */}
+  return (<>
+     <Zoom />
+         {/* <Chart4 data={ data } /> */}
      {/* <Chart /> */}
-     {
+     {/* {
       CreatePlot()
-     }
-    </div>
+     } */}  
+  </>
+   
+ 
   );
 }
 
